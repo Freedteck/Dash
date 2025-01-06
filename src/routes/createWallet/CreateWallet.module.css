@@ -1,0 +1,176 @@
+.createWallet {
+  display: flex;
+  gap: 48px;
+  height: 100%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 700px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  line-height: 51.2px;
+}
+
+.heading span {
+  color: var(--primary-color);
+}
+
+.import {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.import p {
+  font-size: 1.2rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.step p {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.step span {
+  color: var(--primary-color);
+  background-color: var(--primary-color-2);
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.step img {
+  width: 100%;
+}
+
+.generate {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.generate form {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.step select {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.seeds {
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  padding: 12px;
+}
+
+.seeds div {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 65%;
+}
+
+.seed {
+  background-color: #ecf0f5;
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #7d8a991a;
+  font-size: 12px;
+}
+
+.seed span {
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #5a5858;
+  font-size: 8px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.toggle label {
+  background-color: #fff;
+  border-radius: 40px;
+  width: 37px;
+  height: 20px;
+  position: relative;
+}
+
+.toggle input {
+  display: none;
+}
+
+.toggle .circle {
+  position: absolute;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+.toggle input:checked + .circle {
+  transform: translateX(17px);
+}
+
+.checked {
+  color: #14c714;
+}
+
+.toggle label.checked {
+  background-color: #14c714;
+}
+
+.checked .circle {
+  background-color: #fff;
+}

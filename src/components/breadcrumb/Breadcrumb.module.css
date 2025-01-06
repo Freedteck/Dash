@@ -1,0 +1,27 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+}
+
+.navs {
+  padding: 8px 16px;
+  border-radius: 30px;
+}
+
+.main {
+  composes: navs;
+  color: var(--primary-color);
+  background-color: #fff;
+}
+
+.sub {
+  composes: navs;
+  background-color: var(--secondary-color-2);
+  color: var(--secondary-text);
+}
+
+.chevron {
+  color: var(--secondary-color);
+}
